@@ -49,13 +49,13 @@
 }
 
 .metronome-container > .option:first-of-type {
-  top: 25%;
-  left: 10%;
+  top: 30%;
+  left: 15%;
 }
 
 .metronome-container > .option:last-of-type {
-  top: 25%;
-  right: 10%;
+  top: 30%;
+  right: 15%;
 }
 
 #twink {
