@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Fun</title>
-    <link rel="icon" type="image/gif" href="assets/sillyDancer.gif">
+    <link rel="icon" type="image/gif" href="assets/sillyDancer.gif" />
 
-    <link rel="stylesheet" type="text/css" href="styles.css?v=<?php echo time(); ?>">
-</head>
-<body>
-
-    <div class="video-grid">
-        <video src="assets/dancing.mp4" id="dancing" autoplay loop muted></video>
-        <img src="assets/grooving.gif">
-        <img src="assets/wiggling.gif">
-        <img src="assets/yapping.gif">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/metronome.css" />
+  </head>
+  <body>
+    <div class="metronome-container">
+        <div2 class="ticker"></div2>
+        <div class="option" id="twink">Twink</div>
+        <div class="option" id="transbian">Transbian</div>
     </div>
 
-    <script src="script.js?v=<?php echo time(); ?>"></script>
-</body>
+    <div class="video-grid">
+      <video src="assets/dancing.mp4" id="dancing" autoplay loop muted></video>
+      <img src="assets/grooving.gif" />
+      <img src="assets/wiggling.gif" />
+      <img src="assets/yapping.gif" />
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
 </html>
