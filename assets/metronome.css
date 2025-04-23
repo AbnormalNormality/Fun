@@ -1,68 +1,67 @@
 .metronome-container {
-    position: relative;
-    aspect-ratio: 2;
-  
-    margin: auto auto;
-    background-color: #f0f0f0;
-    border: 2px solid #333;
-    width: 80%;
-    border-radius: 10px;
+  position: relative;
+  aspect-ratio: 2;
+
+  margin: auto auto;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.metronome-container > .ticker {
+  width: 3px;
+  height: 90%;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform-origin: bottom center;
+  animation: rotateMetronome 1.2s ease-in-out infinite;
+  z-index: 10;
+
+  background-color: black;
+  border-radius: 10px;
+}
+
+@keyframes rotateMetronome {
+  0% {
+    transform: rotate(-45deg);
   }
-  
-  .metronome-container > .ticker {
-    width: 3px;
-    height: 90%;
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    transform-origin: bottom center;
-    animation: rotateMetronome 1.2s ease-in-out infinite;
-    z-index: 10;
-  
-    background-color: black;
-    border-radius: 10px;
+  50% {
+    transform: rotate(45deg);
   }
-  
-  @keyframes rotateMetronome {
-    0% {
-      transform: rotate(-45deg);
-    }
-    50% {
-      transform: rotate(45deg);
-    }
-    100% {
-      transform: rotate(-45deg);
-    }
+  100% {
+    transform: rotate(-45deg);
   }
-  
-  .metronome-container > .option {
-    position: absolute;
-    font-weight: bold;
-    z-index: 5;
-    text-align: center;
-  
-    background-color: #3498db;
-    color: white;
-    padding: 18px 28px;
-    font-size: 20px;
-    border-radius: 6px;
-  }
-  
-  .metronome-container > .option:first-of-type {
-    top: 25%;
-    left: 10%;
-  }
-  
-  .metronome-container > .option:last-of-type {
-    top: 25%;
-    right: 10%;
-  }
-  
-  #twink {
-      background-color: #5bcefa;
-  }
-  
-  #transbian {
-      background-color: #f5a9b8;
-  }
-  
+}
+
+.metronome-container > .option {
+  position: absolute;
+  font-weight: bold;
+  z-index: 5;
+  text-align: center;
+
+  background-color: #3498db;
+  color: white;
+  padding: 18px 28px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.metronome-container > .option:first-of-type {
+  top: 25%;
+  left: 10%;
+}
+
+.metronome-container > .option:last-of-type {
+  top: 25%;
+  right: 10%;
+}
+
+#twink {
+  background-color: #5bcefa;
+}
+
+#transbian {
+  background-color: #f5a9b8;
+}
